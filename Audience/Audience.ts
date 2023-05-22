@@ -6,8 +6,6 @@ import {
 const [audienceWH_InitPP, setAudienceWH_InitPP] = useState<IAudienceWH[]>([]);
 const [audienceWH, setAudienceWH] = useState<IAudienceWH[]>([]);
 
-
-
 const configAudienceFromPeoplePicker = async (
   selectedGroups: IAudienceWH_PPickerGroup[]
 ) => {
