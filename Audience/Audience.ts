@@ -6,21 +6,7 @@ import {
 const [audienceWH_InitPP, setAudienceWH_InitPP] = useState<IAudienceWH[]>([]);
 const [audienceWH, setAudienceWH] = useState<IAudienceWH[]>([]);
 
-<PeoplePicker
-  context={props.context}
-  titleText={"Audience"}
-  personSelectionLimit={50}
-  showtooltip={false}
-  ensureUser={false}
-  principalTypes={[PrincipalType.SecurityGroup]}
-  onChange={(items: any[]) => {
-    configAudienceFromPeoplePicker(items);
-  }}
-  resolveDelay={1000}
-  defaultSelectedUsers={audienceWH_InitPP?.map(
-    (audienceItem: any) => audienceItem.ppicker_group.secondaryText
-  )}
-/>;
+
 
 const configAudienceFromPeoplePicker = async (
   selectedGroups: IAudienceWH_PPickerGroup[]
@@ -240,3 +226,19 @@ const getVideos_ByCAML = async (): Promise<void> => {
 useEffect(() => {
   getVideos_ByCAML();
 }, []);
+  
+<PeoplePicker
+  context={props.context}
+  titleText={"Audience"}
+  personSelectionLimit={50}
+  showtooltip={false}
+  ensureUser={false}
+  principalTypes={[PrincipalType.SecurityGroup]}
+  onChange={(items: any[]) => {
+    configAudienceFromPeoplePicker(items);
+  }}
+  resolveDelay={1000}
+  defaultSelectedUsers={audienceWH_InitPP?.map(
+    (audienceItem: any) => audienceItem.ppicker_group.secondaryText
+  )}
+/>;  
