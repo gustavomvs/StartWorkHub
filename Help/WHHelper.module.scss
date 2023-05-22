@@ -1,0 +1,16 @@
+@import "./Common.module.scss";
+
+.whHelperControl {
+  // border-top: 1px solid #edebe9;
+  // padding: 10px 0;
+  // margin: 30px 0;
+  font-size: 80%;
+  text-align: center;
+  a {
+    color: $ms-themeSecondary;
+    text-decoration: none;
+    &:hover {
+      color: $ms-themePrimary;
+    }
+  }
+}
