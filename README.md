@@ -17,3 +17,5 @@ https://pnp.github.io/pnpjs/
 https://pnp.github.io/sp-dev-fx-controls-react/
 
 https://www.npmjs.com/package/spfx-fast-serve
+
+https://fabricweb.z5.web.core.windows.net/pr-deploy-site/refs/heads/master/theming-designer/index.html
