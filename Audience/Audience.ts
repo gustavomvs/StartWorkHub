@@ -93,7 +93,8 @@ const configAudienceFromPeoplePicker = async (
 
   //console.log('configAudienceFromPeoplePicker: Audiencia definida:')
   // console.log("local_audiences", local_audiences);
-
+  
+  setAudienceWH_InitPP(local_audiences);
   setAudienceWH(local_audiences);
 };
 
@@ -237,6 +238,6 @@ useEffect(() => {
   }}
   resolveDelay={1000}
   defaultSelectedUsers={audienceWH_InitPP?.map(
-    (audienceItem: any) => audienceItem.ppicker_group.secondaryText
+    (audienceItem: any) => audienceItem.ppicker_group.text
   )}
 />;  
