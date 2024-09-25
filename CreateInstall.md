@@ -17,3 +17,5 @@ npm install -g @microsoft/generator-sharepoint (templates para criar novos proje
 4 - Instalar certificado de desv:gulp trust-dev-cert
 
 5 - Rodar comando para instalar todas as dependencias:npm install
+
+yo @microsoft/sharepoint
